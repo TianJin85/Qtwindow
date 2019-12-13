@@ -1,10 +1,11 @@
 # -*- encoding: utf-8 -*-
 """
-@File    : runwinlayout.py
-@Time    :  2019/12/12 21:46
+@File    : runmainwinhorizontallayout.py
+@Time    :  2019/12/13 22:44
 @Author  : Tianjin
 @Email   : tianjincn@163.com
 @Software: PyCharm
 """
+
 import sys
-from 
+import runmainwinhorizontallayout
