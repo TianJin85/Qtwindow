@@ -17,7 +17,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.formLayoutWidget = QtWidgets.QWidget(self.centralwidget)
-        self.formLayoutWidget.setGeometry(QtCore.QRect(420, 410, 231, 111))
+        self.formLayoutWidget.setGeometry(QtCore.QRect(340, 230, 231, 111))
         self.formLayoutWidget.setObjectName("formLayoutWidget")
         self.formLayout = QtWidgets.QFormLayout(self.formLayoutWidget)
         self.formLayout.setContentsMargins(0, 0, 0, 0)
@@ -48,6 +48,9 @@ class Ui_MainWindow(object):
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
+        self.label.setBuddy(self.lineEdit)
+        self.label_2.setBuddy(self.lineEdit_2)
+        self.label_3.setBuddy(self.lineEdit_3)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -55,6 +58,6 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label.setText(_translate("MainWindow", "姓名"))
-        self.label_2.setText(_translate("MainWindow", "年龄"))
-        self.label_3.setText(_translate("MainWindow", "职位"))
+        self.label.setText(_translate("MainWindow", "姓名(&A):"))
+        self.label_2.setText(_translate("MainWindow", "年龄(&B):"))
+        self.label_3.setText(_translate("MainWindow", "职位(&C):"))
