@@ -6,6 +6,10 @@
 @Email   : tianjincn@163.com
 @Software: PyCharm
 """
+'''
+QLabel与伙伴控件
+mainLayout.addWidget(控件对象，rowIndex,columnIndex,row,column)
+'''
 import sys
 from PyQt5.QtWidgets import QDialog, QLabel, QLineEdit, QPushButton, QGridLayout, QApplication
 
