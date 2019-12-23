@@ -41,7 +41,7 @@ class QLineEditMask(QWidget):
 
     def initUI(self):
         self.setWindowTitle("用掩码QLineEdit控件的输入")
-        print("fdaf")
+
         formLayout = QFormLayout()
 
         ipLineEdit = QLineEdit()
@@ -65,6 +65,7 @@ class QLineEditMask(QWidget):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     main = QLineEditMask()
+    main.initUI()
     main.show()
     sys.exit(app.exec_())
 
