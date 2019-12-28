@@ -45,10 +45,12 @@ class PrintDialog(QWidget):
         if fname[0]:
             with open(fname[0],'r',encoding='utf-8',errors = 'ignore') as f:
                 self.editor.setText(f.read())
+
     # 显示打印设置对话框
     def showSettingsDialog(self):
         printDialog = QPageSetupDialog(self.printer, self)
         printDialog.exec()
+
 
     # 显示打印对话框
     def showPrintDialog(self):
