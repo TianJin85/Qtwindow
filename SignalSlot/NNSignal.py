@@ -16,7 +16,7 @@ class NNSignal(QObject):
     signal1 = pyqtSignal()
     signal2 = pyqtSignal(int)
     signal3 = pyqtSignal()
-    
+
     def __init__(self):
         super(NNSignal, self).__init__()
 
