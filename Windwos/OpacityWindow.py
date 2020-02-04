@@ -17,5 +17,6 @@ if __name__ == '__main__':
     win = QMainWindow()
     win.setWindowTitle('窗口的透明读设置')
     win.setWindowOpacity(0.5)
+    but = QPushButton("我的按钮", win)
     win.show()
     sys.exit(app.exec_())
